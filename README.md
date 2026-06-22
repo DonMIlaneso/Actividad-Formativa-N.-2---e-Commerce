@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # Actividad-Formativa-N.-2---e-Commerce
-=======
+
 # VinylSwap
 
 VinylSwap es una app web frontend tipo marketplace para publicar, buscar, comprar, vender y permutar objetos relacionados con musica fisica, vintage y coleccionable.
