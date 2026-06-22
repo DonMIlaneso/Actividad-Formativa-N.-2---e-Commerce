@@ -74,92 +74,6 @@ Los datos estan en:
 src/data/publicaciones.js
 ```
 
-## Ejecutar localmente
-
-Requisitos:
-
-- Node.js 18 o superior.
-- npm.
-
-Pasos:
-
-```bash
-cd VinylSwap
-npm install
-npm run dev
-```
-
-Luego abrir la URL que muestra Vite, normalmente:
-
-```txt
-http://localhost:5173
-```
-
-## Generar version de produccion
-
-```bash
-npm run build
-```
-
-Para previsualizar la build:
-
-```bash
-npm run preview
-```
-
-## Publicar y obtener una URL publica
-
-### Opcion 1: Vercel
-
-1. Subir este proyecto a un repositorio de GitHub.
-2. Entrar a [Vercel](https://vercel.com/).
-3. Elegir "Add New Project".
-4. Importar el repositorio.
-5. Framework Preset: Vite.
-6. Build Command: `npm run build`.
-7. Output Directory: `dist`.
-8. Presionar "Deploy".
-9. Copiar la URL publica que entrega Vercel.
-
-### Opcion 2: Netlify
-
-1. Subir este proyecto a GitHub.
-2. Entrar a [Netlify](https://www.netlify.com/).
-3. Elegir "Add new site" y luego "Import an existing project".
-4. Seleccionar el repositorio.
-5. Build Command: `npm run build`.
-6. Publish Directory: `dist`.
-7. Presionar "Deploy site".
-8. Copiar la URL publica que entrega Netlify.
-
-### Opcion 3: GitHub Pages
-
-1. Instalar `gh-pages`:
-
-```bash
-npm install --save-dev gh-pages
-```
-
-2. Agregar estos scripts a `package.json`:
-
-```json
-{
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  }
-}
-```
-
-3. Ejecutar:
-
-```bash
-npm run deploy
-```
-
-4. Activar GitHub Pages desde la configuracion del repositorio si fuese necesario.
-5. Copiar la URL publica de GitHub Pages.
-
 ## Estructura del proyecto
 
 ```txt
@@ -184,14 +98,3 @@ VinylSwap/
     utils/
       storage.js
 ```
-
-## Video demo sugerido
-
-1. Mostrar el inicio y explicar que VinylSwap es un marketplace musical vintage.
-2. Usar el buscador y los filtros del catalogo.
-3. Seleccionar una tarjeta y mostrar el detalle de una publicacion.
-4. Presionar "Estoy interesado" para abrir el chat y ver si el vendedor esta en linea.
-5. Escribir un correo para simular la activacion de notificaciones.
-6. Crear una nueva publicacion desde el formulario.
-7. Borrar una publicacion creada por el usuario.
-8. Explicar que los cambios se guardan en `localStorage`.
